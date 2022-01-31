@@ -1,0 +1,61 @@
+@use '../../scss/' as *;
+
+button {
+  cursor: pointer;
+  font-family: $font-family;
+}
+
+.btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem 1.8rem;
+  border: 4px solid transparent;
+  border-radius: $border-radius;
+  color: $white;
+  background-color: $main-color;
+  font-size: 1.5rem;
+  font-weight: 600;
+  box-shadow: $button-shadow;
+  transition: box-shadow .3s ease;
+
+  @include tablet {
+    padding: 0.8rem 0.6rem;
+  }
+}
+
+.btn:hover {
+  box-shadow: $button-hover-shadow;
+}
+
+.btn-outline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid $white;
+  padding: .5rem 1.8rem;
+  background-color: transparent;
+  color: $white;
+  box-shadow: unset;
+  transition: color .3s ease, background-color .3s ease;
+
+  @include tablet {
+    padding: 0.8rem 0.6rem;
+  }
+  @include mobile {
+    padding: 0.2rem;
+  }
+}
+
+.btn-outline:hover {
+  box-shadow: unset;
+  color: $main-color;
+  background-color: $white;
+}
+
+.btn.small {
+  border-width: 2px;
+  padding: 0.25rem 1.5rem;
+  font-size: 1rem;
+}

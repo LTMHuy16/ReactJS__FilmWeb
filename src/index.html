@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+    let string = 'http://localhost:3000/movie/search/caption'
+    const PositionToStart = string.search('movie/') + 6;
+    // console.log(string.slice(PositionToStart));
+    console.log(location.search);
+
+    // https://github.com/remix-run/history/issues/567
+    // https://www.titanwolf.org/Network/q/eb8ea4d1-a19a-4cb0-bfa9-624ad3efb8b6/y
+    // https://stackoverflow.com/questions/39715324/react-router-change-url-and-clear-history
+  </script>
+</body>
+</html>

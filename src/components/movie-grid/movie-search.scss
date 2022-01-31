@@ -1,0 +1,10 @@
+@use '../../scss/' as *;
+
+.movie-search {
+  display: flex;
+
+  .btn-outline {
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+}
